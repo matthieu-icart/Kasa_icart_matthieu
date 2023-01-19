@@ -1,0 +1,145 @@
+/* CONTAINER-HOUSING */
+.container-housing {
+  /* Size */
+  width: 100%;
+  max-width: 1240px;
+
+  /* Layout */
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+/* DETAILS PRODUCT */
+.detail-product {
+  /* Font */
+  color: #ff6060;
+  font-weight: 500;
+  text-align: left;
+}
+
+.detail-product h2 {
+  /* Layout */
+  margin: 0;
+
+  /* Font */
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.detail-product p {
+  /* Layout */
+  margin-top: 0px;
+}
+
+.city {
+  /* Layout */
+  margin-bottom: 23px;
+}
+
+/* COLLAPSE PRODUCT */
+.collapse-product {
+  /* Display */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container-infos {
+  /* Display */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: nowrap;
+
+  /* Layout */
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container-owner {
+  /* Display */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  /* Layout */
+  margin-top: -10px;
+  padding-bottom: 20px;
+}
+
+/* OWNER INFO*/
+.owner-name {
+  /* Size */
+  width: 93px;
+  height: 52px;
+
+  /* Layout */
+  margin: 0 10px 0 0;
+
+  /* Font */
+  color: #ff6060;
+  font-size: 18px;
+  text-align: right;
+}
+
+.owner-picture {
+  /* Size */
+  width: 64px;
+  height: 64px;
+
+  /* Layout */
+  border-radius: 50px;
+}
+
+/* SCREEN < 1239px */
+@media all and (min-width: 0px) and (max-width: 1239px) {
+  .container-housing {
+    /* Size */
+    width: 90%;
+    min-width: 335px;
+
+    /* Layout */
+    margin: 0 auto;
+  }
+
+  /* CONTAINER INFOS */
+  .container-housing .container-infos {
+    /* Display */
+    flex-direction: column;
+    align-items: normal;
+    flex-wrap: nowrap;
+
+    /*  */
+    margin: 15px auto 0px auto;
+    padding: 0;
+  }
+
+  /* H2 */
+  .container-housing .left-details h2 {
+    /* Size */
+    width: 100%;
+
+    /* Layout */
+    margin-bottom: 5px;
+
+    /* Font */
+    font-size: 18px;
+  }
+
+  .container-housing .left-details p {
+    /* Size */
+    width: 100%;
+
+    /* Layout */
+    margin-bottom: 5px;
+
+    /* Font */
+    font-size: 14px;
+  }
+}

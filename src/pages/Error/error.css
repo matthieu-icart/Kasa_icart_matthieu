@@ -1,0 +1,100 @@
+/* ERROR */
+.error {
+  /* Layout */
+  margin-top: 170px;
+
+  /* Color */
+  color: #ff6060;
+}
+
+/* TITLE */
+.error-title {
+  /* Layout */
+  margin: 0px;
+
+  /* Font */
+  font-size: 288px;
+  font-weight: 700;
+}
+
+/* TEXTE */
+.error-text {
+  /* Layout */
+  margin-top: 65px;
+  margin-bottom: 0px;
+
+  /* Font */
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* ERROR */
+.linkErrorToHome {
+  /* Display */
+  display: inline-block;
+
+  /* Layout */
+  margin-top: 182px;
+  margin-bottom: 160px;
+
+  /* Font */
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+
+  /* Decoration */
+  text-decoration: underline;
+  list-style-type: none;
+}
+
+.linkErrorToHome:hover {
+  /* Decoration */
+  text-decoration: none;
+}
+
+.error-returnLine {
+  /* Display */
+  display: none;
+}
+
+/* SCREEN < 1239px */
+@media all and (min-width: 0px) and (max-width: 1239px) {
+  /* ERROR */
+  .error {
+    /* Size */
+    width: 100%;
+
+    /* Layout */
+    margin-top: 175px;
+
+    /* Font */
+    text-align: center;
+  }
+
+  /* TITLE */
+  .error .error-title {
+    /* Font */
+    font-size: 96px;
+  }
+
+  /* TEXTE */
+  .error .error-text {
+    /* Size */
+    width: 80%;
+
+    /* Layout */
+    margin: 10px auto;
+
+    /* Font */
+    font-size: 18px;
+  }
+
+  /* ERROR */
+  .error .linkErrorToHome {
+    font-size: 14px;
+    margin-top: 133px;
+  }
+  .error .error-returnLine {
+    display: initial;
+  }
+}

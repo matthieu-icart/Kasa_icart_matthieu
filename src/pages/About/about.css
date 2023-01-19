@@ -1,0 +1,22 @@
+/* ABOUT */
+.about {
+  /* Size */
+  width: 100%;
+  max-width: 1240px;
+
+  /* Layout */
+  margin: 0 auto;
+  padding-top: 4px;
+}
+
+/* SCREEN < 1239px */
+@media all and (min-width: 0px) and (max-width: 1239px) {
+  .about {
+    /* Size */
+    width: 90%;
+
+    /* Layout */
+    margin-top: -3px;
+    padding: 0;
+  }
+}

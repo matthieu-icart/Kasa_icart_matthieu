@@ -1,0 +1,21 @@
+/* SCREEN > 1239 px */
+.home-container {
+  /* Size */
+  width: 100%;
+  max-width: 1240px;
+
+  /* Layout */
+  margin: 0 auto;
+  padding-top: 23px;
+}
+
+/* SCREEN < 1239 px */
+@media all and (min-width: 0px) and (max-width: 1239px) {
+  .home-container {
+    /* Size */
+    width: 90%;
+
+    /* Layout */
+    padding: 0;
+  }
+}
