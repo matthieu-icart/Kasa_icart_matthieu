@@ -1,0 +1,47 @@
+/* FOOTER */
+footer {
+  /* Size */
+  width: 100%;
+  height: 209px;
+
+  /* Layout */
+  margin-top: 43px;
+
+  /* Font */
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+
+  /* Decoration */
+  background-color: #000;
+}
+
+/* IMAGE */
+footer img {
+  /* Layout */
+  margin-top: 65px;
+}
+
+/* TEXTE */
+footer p {
+  /* Layout */
+  margin-bottom: 29px;
+}
+
+/* SCREEN < 1239px */
+@media all and (min-width: 0px) and (max-width: 1239px) {
+  /* FOOTER */
+  footer {
+    /* Layout */
+    margin-top: 22px;
+  }
+
+  /* TEXTE */
+  footer p {
+    /* Layout */
+    margin: 12px auto 0 auto;
+
+    /* Font */
+    font-size: 12px;
+  }
+}

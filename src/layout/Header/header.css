@@ -1,0 +1,34 @@
+/* HEADER */
+header {
+  /* Size */
+  height: 68px;
+  max-width: 1240px;
+
+  /* Display */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Layout */
+  margin: 40px auto;
+}
+
+/* SCREEN 0 > 1239px */
+@media all and (min-width: 0px) and (max-width: 1239px) {
+  /* HEADER */
+  header {
+    /* Size */
+    width: 90%;
+    min-width: 335px;
+
+    /* Layout */
+    margin: 20px auto;
+  }
+
+  /* IMAGE */
+  header img {
+    /* Size */
+    width: 145px;
+    height: 47px;
+  }
+}
