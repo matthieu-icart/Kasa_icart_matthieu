@@ -1,0 +1,141 @@
+/* BANNER */
+.HomeBanner {
+  /* Position */
+  position: relative;
+
+  /* Layout */
+  margin-bottom: 43px;
+}
+
+/* IMAGE */
+.HomeBanner-img img {
+  /* Size */
+  width: 100%;
+  max-width: 1240px;
+
+  /* Layout */
+  border-radius: 25px;
+
+  /* Fonts */
+  text-align: left;
+}
+
+/* OVERLAY */
+.HomeBanner-overlay {
+  /* Size */
+  width: 100%;
+  height: 98%;
+  max-width: 1240px;
+
+  /* Position */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+
+  /* Layout */
+  border-radius: 25px;
+
+  /* Decoration */
+  background-color: #000;
+  opacity: 0.3;
+}
+
+/* TEXTE */
+.HomeBanner-text {
+  /* Size */
+  width: 80%;
+
+  /* Position */
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+
+  /* Transform */
+  transform: translate(-50%, -50%);
+
+  /* Font */
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68.45px;
+}
+
+.HomeBanner-line_return {
+  display: none;
+}
+
+/* SCREEN < 1239px */
+@media all and (min-width: 0px) and (max-width: 1239px) {
+  /* BANNER */
+  .HomeBanner {
+    /* Size */
+    width: 00%;
+
+    /* Layout */
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+
+  /* IMAGE */
+  .HomeBanner-img {
+    /* Size */
+    width: 100%;
+    min-width: 335px;
+
+    /* Layout */
+    margin: 0 auto;
+  }
+
+  .HomeBanner-img img {
+    /* Size */
+    width: 100%;
+    height: 16vh;
+    max-width: 1240px;
+    min-height: 112px;
+    /* Layout */
+    border-radius: 10px;
+    /* Font */
+    text-align: left;
+  }
+
+  /* OVERLAY */
+  .HomeBanner-overlay {
+    /* Size */
+    width: 100%;
+    height: 16vh;
+    min-height: 112px;
+
+    /* Layout */
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  /* TEXTE */
+  .HomeBanner-text {
+    /* Size */
+    width: 90%;
+
+    /* Position */
+    top: 50%;
+
+    /* Layout */
+    margin: 1px;
+
+    /* Font */
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .HomeBanner-text p {
+    /* Layout */
+    margin: 0 auto;
+  }
+
+  /* LINE-RETURN */
+  .return-line-text-bannerHome {
+    /* display */
+    display: initial;
+  }
+}
