@@ -9,20 +9,10 @@ function Navigation() {
   return (
     <nav className="navigation">
       <li>
-        <NavLink
-          to="/home"
-          className={(nav) => (nav.isActive ? 'nav-active' : null)}
-        >
-          Accueil
-        </NavLink>
+        <NavLink to="/home">Accueil</NavLink>
       </li>
       <li>
-        <NavLink
-          to="/about"
-          className={(nav) => (nav.isActive ? 'nav-active' : null)}
-        >
-          A Propos
-        </NavLink>
+        <NavLink to="/about">A Propos</NavLink>
       </li>
     </nav>
   );

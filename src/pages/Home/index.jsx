@@ -11,7 +11,7 @@ import './home.css';
 // RETURN BANNER AND THUMBS
 function Home() {
   return (
-    <div className="home-container">
+    <div className="home">
       <HomeBanner />
       <LodgingCard />
     </div>

@@ -11,17 +11,16 @@ import './banner.css';
 function HomeBanner() {
   return (
     <div className="HomeBanner">
-      <div className="HomeBanner-img">
+      <div className="HomeBanner-image">
         <img
           src={homePageBanner}
           alt="Récif au bord d'un océan servant d'illustration pour la page d'acceuil du site."
         />
-        <div className="HomeBanner-overlay"></div>
       </div>
       <div className="HomeBanner-text">
         <p>
           Chez vous,
-          <br className="HomeBanner-line_return" />
+          <br className="lineReturn" />
           partout et ailleurs
         </p>
       </div>

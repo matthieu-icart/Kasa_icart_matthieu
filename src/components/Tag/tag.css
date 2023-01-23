@@ -1,14 +1,18 @@
 /* TAG */
 .tag {
+  /* Display */
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  /* Layout */
+  margin-top: 20px;
 }
 
 /* BUTTON */
 .tag-btn {
   /* Size */
-  min-width: 101px;
+  min-width: 100px;
   min-height: 25px;
 
   /* Display */
@@ -19,7 +23,7 @@
 
   /* Layout */
   margin-right: 10px;
-  padding: 0px 7px;
+  padding: 0px 10px;
   border-radius: 10px;
 
   /* Font */
@@ -33,44 +37,4 @@
 .tag-btn p {
   /* Layout */
   margin: 0;
-}
-
-/* SCREEN < 1239px */
-@media all and (min-width: 0px) and (max-width: 1239px) {
-  /* TAG */
-  .container-housing .left-details .tag {
-    /* Size */
-    width: 100%;
-
-    /* Display */
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-end;
-    flex-wrap: wrap;
-
-    /* Font */
-    text-align: center;
-  }
-
-  /* BUTTON */
-  .container-housing .left-details .tag .tag-btn {
-    /* Size */
-    height: 18px;
-    min-width: 84px;
-    min-height: 18px;
-
-    /* Layout */
-    padding: 0 3px;
-    margin-bottom: 5px;
-  }
-
-  .tag .tag-btn p {
-    /* Layout */
-    margin-bottom: 0 !important;
-    padding: 1px !important;
-
-    /* Font */
-    font-size: 10px !important;
-  }
 }

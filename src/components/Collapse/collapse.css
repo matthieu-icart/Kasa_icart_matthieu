@@ -2,15 +2,14 @@
 .collapse-btn {
   /* Size */
   width: 100%;
-  height: 47px;
-  max-width: 1023px;
+  height: 50px;
 
   /* Layout */
-  margin: 33px auto;
+  margin: 30px auto;
   margin-bottom: 0;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 5px;
+  border-radius: 10px 10px;
 
   /* Font */
   color: #fff;
@@ -24,44 +23,39 @@
   cursor: pointer;
 }
 
-/* DIV */
-.collapse-div {
+/* TITLE */
+.collapse-title {
   /* Display */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-/* COLLAPSED */
-.collapse-content.collapsed {
-  /* Display */
-  display: none;
-}
-
-.icon-collapse {
+/* ICON */
+.collapse-icon {
   /* Display */
   display: block;
-
-  /* Layout */
-  float: right;
 
   /* Transition */
   transition: transform 0.2s;
 }
 
-.container-housing .collapse-content {
-  /* Size */
-  width: 582px;
+.collapse-icon.expanded {
+  /* Transform */
+  transform: rotate(-180deg);
 }
 
-/* EXPANDED */
+/* CONTENT */
+.collapse-content.collapsed {
+  /* Display */
+  display: none;
+}
+
 .collapse-content.expanded {
   /* Size */
   height: 100%;
-  max-width: 1023px;
 
   /* Display */
   display: block;
@@ -70,27 +64,12 @@
   margin: 0 auto;
 }
 
-.icon-collapse.expanded {
-  /* Transform */
-  transform: rotate(-180deg);
-}
-
-.container-housing .collapse-content.expanded p {
-  /* Layout */
-  padding-top: 40px;
-
-  /* Size */
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
 /* TEXTE */
 .collapse-content.expanded p {
   /* Layout */
-  margin-top: -5px;
-  padding: 36px 27px 18px 18px;
-  border-radius: 0 0 5px 5px;
+  margin-top: 0px;
+  padding: 30px;
+  border-radius: 15px 15px 15px 15px;
 
   /* Font */
   color: #ff6060;
@@ -101,59 +80,4 @@
 
   /* Decoration */
   background-color: #f7f7f7;
-}
-
-/* HOUSING */
-.container-housing .container-collapse .collapse-btn {
-  width: 582px;
-  min-height: 52px;
-
-  /* Font */
-  font-size: 18px;
-}
-
-.container-housing p li {
-  /* Decoration */
-  list-style: none;
-}
-
-/* SCREEN < 1239px */
-@media all and (min-width: 0px) and (max-width: 1239px) {
-  /* BUTTON */
-  .about .collapse-btn {
-    /* Size */
-    height: 30px;
-
-    /* Layout */
-    margin-top: 20px;
-    padding: 0px 20px 0px 20px;
-
-    /* Font */
-    font-size: 13px;
-  }
-
-  /* COLLAPSED */
-  .about .icon-collapse {
-    /* Size */
-    width: 15px;
-    height: 15px;
-  }
-
-  /* EXPANDED */
-  .about .collapse-content.expanded p {
-    /* Layout */
-    padding: 17px 9px;
-
-    /* Font */
-    font-size: 12px;
-    line-height: 17px;
-    font-weight: 400;
-  }
-
-  /* IMAGE */
-  .about .icon-collapse img {
-    /* Size */
-    width: 15px;
-    height: 15px;
-  }
 }

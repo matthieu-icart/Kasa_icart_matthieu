@@ -1,7 +1,12 @@
 /* ERROR */
 .error {
+  /* Size */
+  width: 90%;
+
   /* Layout */
-  margin-top: 170px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   /* Color */
   color: #ff6060;
@@ -10,17 +15,18 @@
 /* TITLE */
 .error-title {
   /* Layout */
-  margin: 0px;
+  margin-top: -50px;
+  margin-bottom: -50px;
 
   /* Font */
-  font-size: 288px;
+  font-size: 270px;
   font-weight: 700;
 }
 
 /* TEXTE */
 .error-text {
   /* Layout */
-  margin-top: 65px;
+  margin-top: 50px;
   margin-bottom: 0px;
 
   /* Font */
@@ -34,13 +40,14 @@
   display: inline-block;
 
   /* Layout */
-  margin-top: 182px;
-  margin-bottom: 160px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   /* Font */
   color: #ff6060;
   font-size: 18px;
   font-weight: 500;
+  text-align: center;
 
   /* Decoration */
   text-decoration: underline;
@@ -52,49 +59,17 @@
   text-decoration: none;
 }
 
-.error-returnLine {
-  /* Display */
-  display: none;
-}
-
-/* SCREEN < 1239px */
-@media all and (min-width: 0px) and (max-width: 1239px) {
-  /* ERROR */
-  .error {
-    /* Size */
-    width: 100%;
-
-    /* Layout */
-    margin-top: 175px;
-
-    /* Font */
-    text-align: center;
-  }
-
+/* SCREEN < 700px */
+@media all and (min-width: 0px) and (max-width: 700px) {
   /* TITLE */
-  .error .error-title {
+  .error-title {
     /* Font */
-    font-size: 96px;
+    font-size: 150px;
+    font-weight: 700;
   }
-
-  /* TEXTE */
-  .error .error-text {
-    /* Size */
-    width: 80%;
-
-    /* Layout */
-    margin: 10px auto;
-
-    /* Font */
-    font-size: 18px;
-  }
-
   /* ERROR */
-  .error .linkErrorToHome {
-    font-size: 14px;
-    margin-top: 133px;
-  }
-  .error .error-returnLine {
-    display: initial;
+  .linkErrorToHome {
+    /* Layout */
+    margin-bottom: 10px;
   }
 }

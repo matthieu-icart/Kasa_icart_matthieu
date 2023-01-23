@@ -26,13 +26,14 @@ function Lodging() {
     let imageSlider = detailsLogement.pictures;
 
     return (
-      <div className="container-housing">
+      <div className="lodging">
+        {/* SLIDESHOW */}
         <SlideShow imageSlider={imageSlider} />
 
-        {/* CONTAINER INFOS */}
-        <div className="container-infos">
-          {/* LEFT INFOS */}
-          <div className="left-details detail-product">
+        {/* INFOS */}
+        <div className="infos">
+          {/* LODGING INFOS */}
+          <div className="product-infos">
             <h2>{detailsLogement.title}</h2>
             <p className="city">{detailsLogement.location}</p>
             <div className="tag">
@@ -42,31 +43,39 @@ function Lodging() {
             </div>
           </div>
 
-          {/* RIGHT INFOS */}
-          <div className="right-details detail-product">
-            <div className="container-owner">
+          {/* OWNER INFOS */}
+          <div className="product-infos owner-responsive">
+            <div className="lodging-owner">
               <p className="owner-name">{detailsLogement.host.name}</p>
               <img
                 className="owner-picture"
                 src={detailsLogement.host.picture}
-                alt={'Logement + ' + detailsLogement.title}
+                alt={'Photo de profil de' + detailsLogement.host.name}
               />
             </div>
-            <Rating ratingValue={+detailsLogement.rating} />
+            <Rating ratingValue={detailsLogement.rating} />
           </div>
         </div>
 
-        <div className="collapse-product">
-          <Collapse className="collapse-housing" title={'Description'}>
-            {detailsLogement.description}
-          </Collapse>
-          <Collapse
-            className="collapse-housing"
-            title={'Équipements'}
-            children={detailsLogement.equipments.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          />
+        {/* COLAPSES */}
+        <div className="collapse">
+          <div className="collapse-informations">
+            {/* DESCRIPTION */}
+            <Collapse className="collapse-description" title={'Description'}>
+              {detailsLogement.description}
+            </Collapse>
+          </div>
+
+          <div className="collapse-informations">
+            {/* EQUIPËMENTS */}
+            <Collapse
+              className="collapse-equipements"
+              title={'Équipements'}
+              children={detailsLogement.equipments.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            />
+          </div>
         </div>
       </div>
     );

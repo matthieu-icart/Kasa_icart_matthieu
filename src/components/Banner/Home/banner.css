@@ -1,59 +1,37 @@
 /* BANNER */
 .HomeBanner {
-  /* Position */
-  position: relative;
+  /* Size */
+  width: 100%;
+  height: 100%;
 
   /* Layout */
-  margin-bottom: 43px;
+  margin-bottom: 50px;
 }
 
 /* IMAGE */
-.HomeBanner-img img {
+.HomeBanner-image img {
   /* Size */
   width: 100%;
-  max-width: 1240px;
-
-  /* Layout */
-  border-radius: 25px;
-
-  /* Fonts */
-  text-align: left;
-}
-
-/* OVERLAY */
-.HomeBanner-overlay {
-  /* Size */
-  width: 100%;
-  height: 98%;
-  max-width: 1240px;
+  height: 200px;
+  object-fit: cover;
 
   /* Position */
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 0;
-  left: 0px;
 
   /* Layout */
   border-radius: 25px;
-
-  /* Decoration */
-  background-color: #000;
-  opacity: 0.3;
 }
 
 /* TEXTE */
 .HomeBanner-text {
   /* Size */
-  width: 80%;
+  width: 90%;
 
   /* Position */
   position: absolute;
   z-index: 2;
-  top: 50%;
-  left: 50%;
-
-  /* Transform */
-  transform: translate(-50%, -50%);
+  top: 220px;
 
   /* Font */
   color: #fff;
@@ -62,80 +40,39 @@
   line-height: 68.45px;
 }
 
-.HomeBanner-line_return {
+.lineReturn {
   display: none;
 }
 
-/* SCREEN < 1239px */
-@media all and (min-width: 0px) and (max-width: 1239px) {
-  /* BANNER */
-  .HomeBanner {
-    /* Size */
-    width: 00%;
-
-    /* Layout */
-    margin: 0 auto;
-    margin-bottom: 22px;
-  }
-
-  /* IMAGE */
-  .HomeBanner-img {
-    /* Size */
-    width: 100%;
-    min-width: 335px;
-
-    /* Layout */
-    margin: 0 auto;
-  }
-
-  .HomeBanner-img img {
-    /* Size */
-    width: 100%;
-    height: 16vh;
-    max-width: 1240px;
-    min-height: 112px;
-    /* Layout */
-    border-radius: 10px;
-    /* Font */
-    text-align: left;
-  }
-
-  /* OVERLAY */
-  .HomeBanner-overlay {
-    /* Size */
-    width: 100%;
-    height: 16vh;
-    min-height: 112px;
-
-    /* Layout */
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-
+/* SCREEN < 800px */
+@media all and (min-width: 0px) and (max-width: 800px) {
   /* TEXTE */
   .HomeBanner-text {
-    /* Size */
-    width: 90%;
-
     /* Position */
-    top: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 200px;
 
     /* Layout */
-    margin: 1px;
+    margin-left: 10%;
 
     /* Font */
-    font-size: 24px;
+    font-size: 35px;
     text-align: left;
   }
-
-  .HomeBanner-text p {
-    /* Layout */
-    margin: 0 auto;
+  .lineReturn {
+    display: inline;
   }
+}
 
-  /* LINE-RETURN */
-  .return-line-text-bannerHome {
-    /* display */
-    display: initial;
+/* SCREEN < 500px */
+@media all and (min-width: 0px) and (max-width: 500px) {
+  /* TEXTE */
+  .HomeBanner-text {
+    /* Position */
+    top: 170px;
+
+    /* Font */
+    font-size: 30px;
   }
 }

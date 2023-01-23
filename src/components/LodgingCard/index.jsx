@@ -17,14 +17,13 @@ function LodgingCard() {
           href={'/housing/' + lodging.id}
           key={lodging.id}
         >
-          <span className="card-img">
+          <div className="card-img">
             <img
               src={lodging.cover}
               alt={'Illustrations du logement :' + lodging.title}
             />
-          </span>
+          </div>
           <span className="card-title">{lodging.title}</span>
-          <div className="card-overlay"></div>
         </a>
       ))}
     </div>

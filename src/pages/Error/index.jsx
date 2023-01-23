@@ -11,8 +11,7 @@ function Error() {
     <div className="error">
       <h1 className="error-title">404</h1>
       <p className="error-text">
-        Oups! La page que <br className="error-returnLine" /> vous demandez
-        n'existe pas.
+        Oups! La page que vous demandez n'existe pas.
       </p>
       <NavLink to="/home" className="linkErrorToHome">
         Retourner sur la page d'accueil

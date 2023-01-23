@@ -1,21 +1,18 @@
-/* SCREEN > 1239 px */
-.home-container {
+/* HOME */
+.home {
   /* Size */
-  width: 100%;
-  max-width: 1240px;
+  width: 90%;
 
   /* Layout */
   margin: 0 auto;
-  padding-top: 23px;
+  margin-top: 50px;
 }
 
-/* SCREEN < 1239 px */
-@media all and (min-width: 0px) and (max-width: 1239px) {
-  .home-container {
-    /* Size */
-    width: 90%;
-
+/* SCREEN < 500px */
+@media all and (min-width: 0px) and (max-width: 500px) {
+  /* HOME */
+  .home {
     /* Layout */
-    padding: 0;
+    margin-top: 20px;
   }
 }

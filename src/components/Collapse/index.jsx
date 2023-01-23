@@ -13,15 +13,15 @@ const Collapse = (props) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
-    <div className={'container-collapse'}>
+    <div className="informations">
       <button
         className="collapse-btn"
         onClick={() => setIsCollapsed((state) => !state)}
       >
-        <div className="collapse-div">
+        <div className="collapse-title">
           {props.title}
           <span
-            className={`icon-collapse ${
+            className={`collapse-icon ${
               isCollapsed ? 'collapsed' : 'expanded'
             }`}
           >

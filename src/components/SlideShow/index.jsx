@@ -38,13 +38,13 @@ function SlideShow({ imageSlider }) {
   if (imageSlider.length === 1) {
     return (
       <div className="slider">
-        <img src={imageSlider[index]} alt="Logement disponible" />
+        <img src={imageSlider[index]} alt="Illustration du logement" />
       </div>
     );
   } else {
     return (
       <div className="slider">
-        <img src={imageSlider[index]} alt="Logement disponible" />
+        <img src={imageSlider[index]} alt="Illustration du logement" />
         <button id="previous" onClick={previousSlide}>
           {'<'}
         </button>

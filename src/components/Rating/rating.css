@@ -1,4 +1,8 @@
 /* RATING */
+.rating {
+  min-width: 200px;
+}
+
 .rating-star {
   /* Layout */
   margin-right: 10px;

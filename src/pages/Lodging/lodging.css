@@ -1,51 +1,22 @@
-/* CONTAINER-HOUSING */
-.container-housing {
+/* LODGING */
+.lodging {
   /* Size */
-  width: 100%;
-  max-width: 1240px;
+  width: 90%;
+  min-width: 400px;
 
   /* Layout */
   margin: 0 auto;
-  margin-top: -20px;
-}
+  margin-bottom: 50px;
+  padding-top: 30px;
 
-/* DETAILS PRODUCT */
-.detail-product {
   /* Font */
   color: #ff6060;
   font-weight: 500;
   text-align: left;
 }
 
-.detail-product h2 {
-  /* Layout */
-  margin: 0;
-
-  /* Font */
-  font-size: 36px;
-  font-weight: 500;
-}
-
-.detail-product p {
-  /* Layout */
-  margin-top: 0px;
-}
-
-.city {
-  /* Layout */
-  margin-bottom: 23px;
-}
-
-/* COLLAPSE PRODUCT */
-.collapse-product {
-  /* Display */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.container-infos {
+/* LODGING INFOS */
+.infos {
   /* Display */
   display: flex;
   flex-direction: row;
@@ -55,12 +26,11 @@
   flex-wrap: nowrap;
 
   /* Layout */
-  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.container-owner {
+.lodging-owner {
   /* Display */
   display: flex;
   flex-direction: row;
@@ -73,14 +43,15 @@
   padding-bottom: 20px;
 }
 
-/* OWNER INFO*/
+/* OWNER INFOS */
 .owner-name {
   /* Size */
-  width: 93px;
-  height: 52px;
+  width: 100px;
+  height: 50px;
 
   /* Layout */
-  margin: 0 10px 0 0;
+  padding-top: 30px;
+  margin-right: 10px;
 
   /* Font */
   color: #ff6060;
@@ -97,49 +68,87 @@
   border-radius: 50px;
 }
 
-/* SCREEN < 1239px */
-@media all and (min-width: 0px) and (max-width: 1239px) {
-  .container-housing {
-    /* Size */
-    width: 90%;
-    min-width: 335px;
+/* PRODUCT INFOS */
+.product-infos h2 {
+  /* Font */
+  font-size: 36px;
+  font-weight: 500;
+}
 
-    /* Layout */
-    margin: 0 auto;
-  }
+/* COLLAPSE */
+.collapse {
+  /* Display */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 5%;
+}
 
-  /* CONTAINER INFOS */
-  .container-housing .container-infos {
+.collapse-informations {
+  /* Size */
+  width: 100%;
+}
+
+/* LODGING */
+.collapse-btn {
+  /* Size */
+  width: 100%;
+  height: 50px;
+}
+
+.collapse-content.expanded p {
+  /* Font */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.collapse-content.expanded p li {
+  /* Decoration */
+  list-style: none;
+}
+
+/* SCREEN < 700px */
+@media all and (min-width: 0px) and (max-width: 700px) {
+  /* LODGING INFOS */
+  .infos {
     /* Display */
+    display: flex;
     flex-direction: column;
-    align-items: normal;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
     flex-wrap: nowrap;
 
-    /*  */
-    margin: 15px auto 0px auto;
-    padding: 0;
+    /* Layout */
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
-  /* H2 */
-  .container-housing .left-details h2 {
+  /* OWNER */
+  .owner-responsive {
     /* Size */
     width: 100%;
 
-    /* Layout */
-    margin-bottom: 5px;
-
-    /* Font */
-    font-size: 18px;
+    /* Display */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .container-housing .left-details p {
-    /* Size */
-    width: 100%;
+  /* COLLAPSE */
+  .collapse {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5%;
 
     /* Layout */
-    margin-bottom: 5px;
-
-    /* Font */
-    font-size: 14px;
+    margin-top: -20px;
   }
 }
